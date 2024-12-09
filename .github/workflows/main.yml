@@ -1,14 +1,16 @@
-name: "Test OE Mastodon AWS Pattern Terraform Module"
+name: "Test OE Jitsi AWS Pattern Terraform Module"
  
 on:
  push:
    branches:
      - main
+     - develop
  pull_request:
    branches:
      - main
+     - develop
  schedule:
-   - cron: "15 10 * * 1"
+   - cron: "15 11 * * 1"
  
 env:
  # verbosity setting for Terraform logs
