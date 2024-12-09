@@ -1,3 +1,5 @@
 # Unreleased
 
-* Initial module development
+4.0.0
+-----
+* Initial Terraform module release
