@@ -14,6 +14,12 @@ variable "asg_desired_capacity" {
   default     = 1
 }
 
+variable "asg_disk_usage_alarm_threshold" {
+  description = "Required: The alarm threshold for disk usage percentage."
+  default     = 80
+  type        = number
+}
+
 variable "asg_instance_type" {
   description = "Required: The EC2 instance type for the application Auto Scaling Group."
   type        = string
