@@ -11,7 +11,7 @@ terraform {
 resource "aws_cloudformation_stack" "oe_patterns_jitsi" {
   name = var.stack_name
 
-  template_url = "https://s3.amazonaws.com/awsmp-fulfillment-cf-templates-prod/ac194df3-6564-4b73-933a-99a8d35dac92/3b86fffdeec24745a6806725c543a514.template"
+  template_url = "https://awsmp-cft-211125678794-1707910187780.s3.us-east-1.amazonaws.com/5f28ec77-34be-4eb2-88d5-daf8736a4677/5f28ec77-34be-4eb2-88d5-daf8736a4677/template.yaml"
 
   capabilities = ["CAPABILITY_NAMED_IAM"]
 
@@ -25,6 +25,7 @@ resource "aws_cloudformation_stack" "oe_patterns_jitsi" {
     AlbCertificateArn                   = var.alb_certificate_arn
     AlbIngressCidr                      = var.alb_ingress_cidr
     AsgDesiredCapacity                  = var.asg_desired_capacity
+    AsgDiskUsageAlarmThreshold          = var.asg_disk_usage_alarm_threshold
     AsgInstanceType                     = var.asg_instance_type
     AsgKeyName                          = var.asg_key_name
     AsgMaxSize                          = var.asg_max_size
