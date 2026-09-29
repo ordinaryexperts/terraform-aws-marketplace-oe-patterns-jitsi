@@ -1,5 +1,9 @@
 # Unreleased
 
+4.3.0
+-----
+* Updated to use Jitsi pattern 4.3.0 CloudFormation template (Jitsi stable-11248; NLB UDP target groups now report healthy; Lambda runtime python3.13)
+
 4.2.0
 -----
 * Updated to use Jitsi pattern 4.2.0 CloudFormation template (Jitsi stable-11031)
