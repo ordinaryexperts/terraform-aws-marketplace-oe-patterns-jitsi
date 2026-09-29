@@ -11,7 +11,7 @@ terraform {
 resource "aws_cloudformation_stack" "oe_patterns_jitsi" {
   name = var.stack_name
 
-  template_url = "https://awsmp-cft-053155443450-1579814207723.s3.us-east-1.amazonaws.com/67195d79-9a8c-40a3-ad45-5203873d20fa/67195d79-9a8c-40a3-ad45-5203873d20fa/template.yaml"
+  template_url = "https://awsmp-cft-360312772214-1782838185296.s3.us-east-1.amazonaws.com/306e7277-01e0-469e-ab89-677d135bf4e7/306e7277-01e0-469e-ab89-677d135bf4e7/template.yaml"
 
   capabilities = ["CAPABILITY_NAMED_IAM"]
 
